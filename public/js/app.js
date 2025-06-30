@@ -1,5 +1,3 @@
-console.log('Client side JavaScript file is loaded!');
-
 // Fetch allows you get data from a url and do something with it.
 
 // fetch('https://puzzle.mead.io/puzzle').then((response)=>{
