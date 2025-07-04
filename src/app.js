@@ -118,5 +118,6 @@ app.get('*', (req, res)=>{
 });
 
 app.listen(port, ()=>{
+    // window.alert(port)
     console.log('Server is up on port 3000.')
 });

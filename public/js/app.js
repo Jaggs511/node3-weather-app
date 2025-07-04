@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e)=>{
     messageOne.textContent = 'Loading... ';
     messageTwo.textContent = ''
 
-    fetch(`https://node3-weather-app-yc6i.onrender.com?address=${location}`).then((response)=>{
+    fetch(`https://node3-weather-app-yc6i.onrender.com/weather?address=${location}`).then((response)=>{
         response.json().then((data)=>{
             if(data.error){
                 messageOne.textContent = data.error;
