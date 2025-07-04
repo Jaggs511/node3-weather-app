@@ -2,9 +2,10 @@
   "name": "web-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,16 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "hbs": "^4.0.1",
-    "request": "^2.88.0"
-  }
+    "request": "^2.88.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaggs511/node3-weather-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jaggs511/node3-weather-app/issues"
+  },
+  "homepage": "https://github.com/Jaggs511/node3-weather-app#readme"
 }
