@@ -63,23 +63,29 @@ app.get('/weather', (req, res)=>{
         if(error){
            return res.send({error});
         }
-
-        setTimeout(()=>{
-
+        
+        setTimeout(()=> { 
             forecast(latitude, longitude, (error, forecastData)=>{
-            if(error){
-                return res.send({ error });
-            }
+                if(error){
+                    return res.send({ error });
+                }
 
-            res.send({
-                forecast: forecastData,
-                location,
-                address: req.query.address
-            })
-            console.log(forecast());
-        })
+                res.send({
+                    forecast: forecastData,
+                    location,
+                    address: req.query.address
+                })
+
+                // console.log(forecastData);
+        }) }, 5000);
+        
+       
     });
-        }, 2000);
+
+    
+
+     
+          
 
         
 });
