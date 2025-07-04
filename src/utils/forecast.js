@@ -12,7 +12,7 @@ const forecast = (lat, lon, callback)=>{
         }else if(body.error){
              callback(body.error.info, undefined);
         }else{
-             callback(undefined, body.current.weather_descriptions +'. It is currently ' + body.current.temperature + ' degrees out' + '. ' + 'There is ' + body.current.feelslike + '%' + ' chance of rain.');
+             callback(undefined, body.current.weather_descriptions +'. It is currently ' + body.current.temperature + ' degrees out' + '. ' + 'There is ' + body.current.feelslike + '%' + ' chance of rain.' + body.current.is_day + ".");
         };
     });
 };
